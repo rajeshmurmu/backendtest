@@ -15,8 +15,8 @@ app.get("/login", (req, res) => {
   res.send("<h1>please login at this website.");
 });
 
-app.get("/youtube", (req, res) => {
-  res.send("<h2>Welcome to youtube</h2>");
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/about.html");
 });
 
 app.listen(process.env.PORT, () => {
